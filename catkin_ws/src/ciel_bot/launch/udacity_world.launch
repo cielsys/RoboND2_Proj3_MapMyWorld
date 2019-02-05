@@ -11,7 +11,7 @@
     <arg name="debug" default="false"/>
 
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <!-- <arg name="world_name" value="$(find udacity_bot)/worlds/udacity.world"/> -->
+        <!-- <arg name="world_name" value="$(find ciel_bot)/worlds/udacity.world"/> -->
         <arg name="world_name" value="$(find udacity_bot)/worlds/jackal_race.world"/>
         <arg name="paused" value="$(arg paused)"/>
         <arg name="use_sim_time" value="$(arg use_sim_time)"/>
@@ -28,7 +28,7 @@
           output="screen" args="-urdf -param robot_description
             -model $(arg which_robot)"/>
 
-            <!-- -model udacity_bot"/> -->
+            <!-- -model ciel_bot"/> -->
 
     <!--launch rviz-->
     <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d /home/cl/AAAProjects/AAAUdacity/roboND2/Proj2_Localization/P2_Root/catkin_ws/src/udacity_bot/launch/udacity_bot.rviz"/>

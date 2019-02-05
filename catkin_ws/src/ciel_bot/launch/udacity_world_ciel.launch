@@ -11,7 +11,7 @@
     <arg name="debug" default="false"/>
 
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <!-- <arg name="world_name" value="$(find udacity_bot)/worlds/udacity.world"/> -->
+        <!-- <arg name="world_name" value="$(find ciel_bot)/worlds/udacity.world"/> -->
         <arg name="world_name" value="$(find udacity_bot)/worlds/jackal_race.world"/>
         <arg name="paused" value="$(arg paused)"/>
         <arg name="use_sim_time" value="$(arg use_sim_time)"/>
@@ -20,7 +20,7 @@
         <arg name="debug" value="$(arg debug)"/>
     </include>
 
-    <!-- <arg name="which_robot" default="udacity_bot"/> -->
+    <!-- <arg name="which_robot" default="ciel_bot"/> -->
     <arg name="which_robot" default="udacity_bot_ciel"/>
 
     <!--spawn a robot in gazebo world-->

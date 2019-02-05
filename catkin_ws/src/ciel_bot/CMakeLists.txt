@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(udacity_bot)
+project(ciel_bot)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -115,7 +115,7 @@ generate_messages(
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES udacity_bot
+#  LIBRARIES ciel_bot
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
 )
@@ -130,7 +130,7 @@ include_directories(${catkin_INCLUDE_DIRS})
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/udacity_bot.cpp
+#   src/${PROJECT_NAME}/ciel_bot.cpp
 # )
 
 ## Add cmake target dependencies of the library
