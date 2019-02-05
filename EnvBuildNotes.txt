@@ -1,0 +1,84 @@
+These notes are from my attempts to get the environment working in my mint laptop. Unsuccessfully.
+
+https://github.com/introlab/rtabmap_ros#build-from-source
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/kinetic/lib/x86_64-linux-gnu
+
+sudo apt-get install ros-kinetic-rtabmap ros-kinetic-rtabmap-ros
+sudo apt-get remove ros-kinetic-rtabmap ros-kinetic-rtabmap-rossudo apt-get update
+
+sudo apt-get install libqt4-dev 
+sudo apt-get install libvtk5-qt4-dev
+
+sudo aptitude -f install libvtk5-qt4-dev
+sudo aptitude install libvtk5-qt4-dev
+
+The following packages have unmet dependencies:
+ libvtk5-qt4-dev : Depends: libvtk5-dev (= 5.10.1+dfsg-2.1build1) but it is not going to be installed
+E: Unable to correct problems, you have held broken packages
+
+
+dpkg --get-selections | grep hold
+
+
+Linking CXX shared library ../../../bin/librtabmap_core.so
+/usr/bin/ld: cannot find -lvtkGUISupportQt
+/usr/bin/ld: cannot find -lvtkGUISupportQt
+
+
+dpkg --get-selections | grep -v deinstall | grep vtk
+libvtk6-dev					install
+libvtk6-java					install
+libvtk6-qt-dev					install
+libvtk6.2					install
+libvtk6.2-qt					install
+python-vtk6					install
+tcl-vtk6					install
+vtk6						install
+
+
+ll /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so
+sudo ln -s /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0 /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt.so
+
+
+dpkg -L libvtk6.2-qt.so
+/.
+/usr
+/usr/lib
+/usr/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2.0
+/usr/lib/x86_64-linux-gnu/libvtkGUISupportQtWebkit-6.2.so.6.2.0
+/usr/lib/x86_64-linux-gnu/libvtkRenderingQtTCL-6.2.so.6.2.0
+/usr/lib/x86_64-linux-gnu/libvtkGUISupportQtSQL-6.2.so.6.2.0
+/usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2.0
+/usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0
+/usr/lib/x86_64-linux-gnu/libvtkRenderingQt-6.2.so.6.2.0
+/usr/lib/x86_64-linux-gnu/libvtkRenderingQtPython27D-6.2.so.6.2.0
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libvtk6.2-qt
+/usr/share/doc
+/usr/share/doc/libvtk6.2-qt
+/usr/share/doc/libvtk6.2-qt/copyright
+/usr/share/doc/libvtk6.2-qt/changelog.Debian.gz
+/usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2
+/usr/lib/x86_64-linux-gnu/libvtkGUISupportQtWebkit-6.2.so.6.2
+/usr/lib/x86_64-linux-gnu/libvtkRenderingQt-6.2.so.6.2
+/usr/lib/x86_64-linux-gnu/libvtkGUISupportQtOpenGL-6.2.so.6.2
+/usr/lib/x86_64-linux-gnu/libvtkGUISupportQtSQL-6.2.so.6.2
+/usr/lib/x86_64-linux-gnu/libvtkViewsQt-6.2.so.6.2
+/usr/lib/x86_64-linux-gnu/libvtkRenderingQtTCL-6.2.so.6.2
+/usr/lib/x86_64-linux-gnu/libvtkRenderingQtPython27D-6.2.so.6.2
+
+
+Install RTAB-Map ros-pkg in your src folder of your Catkin workspace.
+
+$ cd ~/catkin_ws
+$ git clone https://github.com/introlab/rtabmap_ros.git src/rtabmap_ros
+$ catkin_make -j1
+
+source devel/setup.bash 
+
+rosdep install -i rtabmap_ros
+rosdep install -i slam_bot
+
