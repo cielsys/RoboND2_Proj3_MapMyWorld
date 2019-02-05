@@ -1,0 +1,61 @@
+%% V1.0
+%% by Christopher Leith, udacl@cielsystems.com
+%% This is a template for Udacity projects using IEEEtran.cls
+
+\documentclass[10pt,journal,compsoc]{IEEEtran}
+
+\usepackage[pdftex]{graphicx}    
+\usepackage{cite}
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\begin{document}
+
+\title{WhereAmI - Robotic Localization}
+
+\author{Christopher Leith}
+
+\markboth{WhereAmI, Localization, Udacity}%
+{}
+\IEEEtitleabstractindextext{%
+
+\begin{abstract}
+In this project we create a simulated robot and demonstrate Simultaneous Localization and Mapping (SLAM) within the ROS framework to permit navigation within a small simulated "Gazebo" world. A differential drive robot is designed to operate within the Gazebo simulation and uses the ROS navigation stack and the RTAB-map-ros package for creating a map on the fly and localizing itself within that map. . The tuning of configuration parameters of the simulation, navigation stack and AMCL package neccesary for success are discussed.\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+Mobile Robot, Localization, Monte Carlo Localiztion, ROS.
+\end{IEEEkeywords}}
+
+
+\maketitle
+\IEEEdisplaynontitleabstractindextext
+\IEEEpeerreviewmaketitle
+\label{sec:Introduction}
+\section{Introduction}
+\IEEEPARstart{M}{obile} robots must be able to determine their location within their region of operation, a process known as localization, and navigate to other locations reliably in order to perform their tasks succesfully.
+
+If there is no predefined map of the region the robot must be able to build up a map of using its' sensors and simultaneously localize itself within that map. This process is known as SLAM\hfill \vspace{\baselineskip}
+
+In this project SLAM is demonstrated in a supplied Gazebo world and a custom designed world.
+
+\section{Background / Formulation}
+Background
+
+\subsection{Slam}
+Slam
+
+\section{Model Configuration}
+Config 
+
+\section{Results}
+Results
+
+
+\section{Discussion}
+Discussion
+
+\section{Conclusion / Future work}
+Conclusion
+
+
+\end{document}
