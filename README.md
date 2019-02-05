@@ -13,17 +13,17 @@ The project report is [report.pdf](./report/report.pdf)<br/>
 
 To run the udacity bot:
 ```commandline
-roslaunch udacity_bot udacity_world.launch
+roslaunch ciel_bot udacity_world.launch
 
 ```
 To run my custom bot:
 ```commandline
-roslaunch udacity_bot udacity_world_ciel.launch
+roslaunch ciel_bot udacity_world_ciel.launch
 ```
 
 To issue the goal command:
 ```commandline
-rosrun udacity_bot navigation_goal
+rosrun ciel_bot navigation_goal
 ```
 
 ## Links

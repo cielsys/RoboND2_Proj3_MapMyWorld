@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <launch>
-    <include file="$(find udacity_bot)/launch/robot_description.launch"/>
+    <include file="$(find ciel_bot)/launch/robot_description_ciel.launch"/>
 
     <arg name="world" default="empty"/>
     <arg name="paused" default="false"/>
@@ -12,7 +12,7 @@
 
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
         <!-- <arg name="world_name" value="$(find ciel_bot)/worlds/udacity.world"/> -->
-        <arg name="world_name" value="$(find udacity_bot)/worlds/jackal_race.world"/>
+        <arg name="world_name" value="$(find ciel_bot)/worlds/jackal_race.world"/>
         <arg name="paused" value="$(arg paused)"/>
         <arg name="use_sim_time" value="$(arg use_sim_time)"/>
         <arg name="gui" value="$(arg gui)"/>
@@ -20,19 +20,17 @@
         <arg name="debug" value="$(arg debug)"/>
     </include>
 
-    <arg name="which_robot" default="udacity_bot"/>
     <!-- <arg name="which_robot" default="ciel_bot"/> -->
+    <arg name="which_robot" default="ciel_bot"/>
 
     <!--spawn a robot in gazebo world-->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false"
           output="screen" args="-urdf -param robot_description
-            -model $(arg which_robot)"/>
-
-            <!-- -model ciel_bot"/> -->
+          -model ciel_bot"/>
 
     <!--launch rviz-->
-    <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d /home/cl/AAAProjects/AAAUdacity/roboND2/Proj2_Localization/P2_Root/catkin_ws/src/udacity_bot/launch/udacity_bot.rviz"/>
+    <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d /home/cl/AAAProjects/AAAUdacity/roboND2/Proj3_MapMyWorld/P3_Root/catkin_ws/src/ciel_bot/launch/ciel_bot.rviz"/>
 
-    <include file="$(find udacity_bot)/launch/amcl.launch"/>
+    <include file="$(find ciel_bot)/launch/amcl.launch"/>
 
 </launch>
