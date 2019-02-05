@@ -29,7 +29,7 @@
           -model ciel_bot"/>
 
     <!--launch rviz-->
-    <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d /home/cl/AAAProjects/AAAUdacity/roboND2/Proj3_MapMyWorld/P3_Root/catkin_ws/src/ciel_bot/launch/ciel_bot.rviz"/>
+    <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find ciel_bot)/launch/ciel_bot.rviz"/>
 
     <include file="$(find ciel_bot)/launch/amcl.launch"/>
 
