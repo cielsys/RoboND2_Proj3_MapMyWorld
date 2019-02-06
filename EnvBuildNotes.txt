@@ -39,6 +39,9 @@ vtk6						install
 ll /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so
 sudo ln -s /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-6.2.so.6.2.0 /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt.so
 
+In file included from /home/cl/rtabmap/guilib/src/MainWindow.cpp:56:0:
+/home/cl/rtabmap/guilib/src/../include/rtabmap/gui/CloudViewer.h:37:24: fatal error: QVTKWidget.h: No such file or directory
+ #include <QVTKWidget.h>
 
 dpkg -L libvtk6.2-qt.so
 /.
@@ -82,3 +85,33 @@ source devel/setup.bash
 rosdep install -i rtabmap_ros
 rosdep install -i slam_bot
 
+ make
+[  5%] Built target rtabmap_utilite
+[  6%] Built target res_tool
+[ 42%] Built target rtabmap_core
+[ 42%] Building CXX object guilib/src/CMakeFiles/rtabmap_gui.dir/MainWindow.cpp.o
+In file included from /home/cl/rtabmap/guilib/src/MainWindow.cpp:56:0:
+/home/cl/rtabmap/guilib/src/../include/rtabmap/gui/CloudViewer.h:37:24: fatal error: QVTKWidget.h: No such file or directory
+ #include <QVTKWidget.h>
+                        ^
+compilation terminated.
+guilib/src/CMakeFiles/rtabmap_gui.dir/build.make:274: recipe for target 'guilib/src/CMakeFiles/rtabmap_gui.dir/MainWindow.cpp.o' failed
+make[2]: *** [guilib/src/CMakeFiles/rtabmap_gui.dir/MainWindow.cpp.o] Error 1
+CMakeFiles/Makefile2:341: recipe for target 'guilib/src/CMakeFiles/rtabmap_gui.dir/all' failed
+make[1]: *** [guilib/src/CMakeFiles/rtabmap_gui.dir/all] Error 2
+Makefile:149: recipe for target 'all' failed
+make: *** [all] Error 2
+
+find /usr/include/ -print |grep -i qvtk
+/usr/include/vtk-6.2/QVTKApplication.h
+/usr/include/vtk-6.2/QVTKWin32Header.h
+/usr/include/vtk-6.2/QVTKPaintEngine.h
+/usr/include/vtk-6.2/QVTKWidget2.h
+/usr/include/vtk-6.2/QVTKInteractorInternal.h
+/usr/include/vtk-6.2/QVTKInteractorAdapter.h
+/usr/include/vtk-6.2/QVTKInteractor.h
+/usr/include/vtk-6.2/QVTKWidget.h
+/usr/include/vtk-6.2/QVTKGraphicsItem.h
+
+curl -L https://s3-us-west-1.amazonaws.com/udacity-robotics/Term+2+Resources/P3+Resources/models.tar.gz | tar zx -C ~/.gazebo/
+wget https://s3-us-west-1.amazonaws.com/udacity-robotics/Term+2+Resources/P3+Resources/Student+Project+Materials.zip

@@ -6,13 +6,13 @@
     <link name="robot_footprint"></link>
 
     <joint name="robot_footprint_joint" type="fixed">
-        <origin xyz="0 0 0" rpy="0 0 0" />
+        <origin xyz="0 0.1 0" rpy="0 0 0" />
         <parent link="robot_footprint"/>
         <child link="chassis" />
     </joint>
 
     <link name='chassis'>
-        <pose>0 0 0.1 0 0 0</pose>
+        <pose>0 0 0.0 0 0 0</pose>
 
         <inertial>
             <mass value="15.0"/>
@@ -152,7 +152,7 @@
 
     <!-- *********  Camera ******************************** -->
     <joint name="camera_joint" type="fixed">
-        <origin xyz="0.0 0 0" rpy="0 0 0"/>
+        <origin xyz="0.2 0 0" rpy="0 0 0"/>
         <child link="camera"/>
         <parent link="chassis"/>
     </joint>
@@ -188,7 +188,7 @@
 
     <!-- *********  Laser Rangefinder ******************************** -->
     <joint type="fixed" name="hokuyo_joint">
-        <origin xyz="0.0 0 0.1" rpy="0 0 0"/>
+        <origin xyz="0 0 0.1" rpy="0 0 0"/>
         <child link="hokuyo"/>
         <parent link="chassis"/>
     </joint>

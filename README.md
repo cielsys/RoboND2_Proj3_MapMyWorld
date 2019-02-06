@@ -11,14 +11,12 @@ $REPO/catkin_ws/src
 
 The project report is [report.pdf](./report/report.pdf)<br/>
 
-To run the udacity bot:
+Main launch invocation:
+choose one of
 ```commandline
-roslaunch ciel_bot udacity_world.launch
-
-```
-To run my custom bot:
-```commandline
-roslaunch ciel_bot udacity_world_ciel.launch
+roslaunch ciel_bot world_main.launch world_name:=kitchen_dining.world
+roslaunch ciel_bot world_main.launch world_name:=custom.world
+roslaunch ciel_bot world_main.launch world_name:=jackal_race.world
 ```
 
 To issue the goal command:
