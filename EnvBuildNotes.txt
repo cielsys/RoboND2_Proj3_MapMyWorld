@@ -74,6 +74,18 @@ dpkg -L libvtk6.2-qt.so
 /usr/lib/x86_64-linux-gnu/libvtkRenderingQtPython27D-6.2.so.6.2
 
 
+
+
+Install RTAB-Map standalone libraries. Add -DCMAKE_INSTALL_PREFIX=~/catkin_ws/devel to cmake command below if you want to install in your Catkin's devel folder without sudo. Do not clone in your Catkin workspace.
+
+cd /home/workspace
+git clone https://github.com/introlab/rtabmap.git rtabmap
+cd rtabmap/build
+cmake ..  [<---double dots included]
+make
+sudo make install
+
+
 Install RTAB-Map ros-pkg in your src folder of your Catkin workspace.
 
 $ cd ~/catkin_ws
@@ -85,6 +97,7 @@ source devel/setup.bash
 rosdep install -i rtabmap_ros
 rosdep install -i slam_bot
 
+urdf_to_graphiz /home/cl/AAAProjects/AAAUdacity/roboND2/Proj3_MapMyWorld/P3_Root/catkin_ws/src/ciel_bot/urdf/ciel_bot.xacro
  make
 [  5%] Built target rtabmap_utilite
 [  6%] Built target res_tool
@@ -115,3 +128,6 @@ find /usr/include/ -print |grep -i qvtk
 
 curl -L https://s3-us-west-1.amazonaws.com/udacity-robotics/Term+2+Resources/P3+Resources/models.tar.gz | tar zx -C ~/.gazebo/
 wget https://s3-us-west-1.amazonaws.com/udacity-robotics/Term+2+Resources/P3+Resources/Student+Project+Materials.zip
+
+roslaunch ciel_bot world_main.launch world_name:=simple_rect.world
+roslaunch ciel_bot teleop.launch

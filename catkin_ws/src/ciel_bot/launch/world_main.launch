@@ -33,4 +33,6 @@
 
     <include file="$(find ciel_bot)/launch/amcl.launch"/>
 
+    <node name="teleop" pkg="ciel_bot" type="teleop" output="screen"/>
+
 </launch>
