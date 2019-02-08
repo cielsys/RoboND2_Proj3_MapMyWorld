@@ -3,6 +3,7 @@
 <launch>
     <include file="$(find ciel_bot)/launch/robot_description_ciel.launch"/>
 
+    <arg name="map_package" default="mapping.launch"/> <!-- Either mapping.launch or amcl.launch -->
     <arg name="world" default="jackal_race.world"/>
     <arg name="paused" default="false"/>
     <arg name="use_sim_time" default="true"/>
@@ -31,8 +32,6 @@
     <!--launch rviz-->
     <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find ciel_bot)/launch/ciel_bot.rviz"/>
 
-    <include file="$(find ciel_bot)/launch/amcl.launch"/>
-
-    <node name="teleop" pkg="ciel_bot" type="teleop" output="screen"/>
+    <include file="$(find ciel_bot)/launch/$(arg map_package)"/>
 
 </launch>

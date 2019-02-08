@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /LaserScan1
         - /Camera1
         - /Camera1/Visibility1
         - /Path (local plan)1/Offset1
@@ -371,5 +372,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1554
-  X: 1932
-  Y: 359
+  X: 1920
+  Y: 301
