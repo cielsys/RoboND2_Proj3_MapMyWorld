@@ -9,6 +9,7 @@ Panels:
         - /LaserScan1
         - /Camera1
         - /Camera1/Visibility1
+        - /Map1
         - /Path (local plan)1/Offset1
         - /PointCloud22
       Splitter Ratio: 0.5
@@ -160,7 +161,7 @@ Visualization Manager:
       Draw Behind: false
       Enabled: true
       Name: Map
-      Topic: /move_base/global_costmap/costmap
+      Topic: /rtabmap/grid_prob_map
       Unreliable: false
       Use Timestamp: false
       Value: true
@@ -373,4 +374,4 @@ Window Geometry:
     collapsed: true
   Width: 1554
   X: 1920
-  Y: 301
+  Y: 272
