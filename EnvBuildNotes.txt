@@ -126,6 +126,9 @@ find /usr/include/ -print |grep -i qvtk
 /usr/include/vtk-6.2/QVTKWidget.h
 /usr/include/vtk-6.2/QVTKGraphicsItem.h
 
+
+export ROS_IP=192.168.1.153
+
 curl -L https://s3-us-west-1.amazonaws.com/udacity-robotics/Term+2+Resources/P3+Resources/models.tar.gz | tar zx -C ~/.gazebo/
 wget https://s3-us-west-1.amazonaws.com/udacity-robotics/Term+2+Resources/P3+Resources/Student+Project+Materials.zip
 
@@ -146,3 +149,7 @@ rostopic hz /rtabmap/odom
 rostopic hz /camera/rgb/image_rect_color
 rostopic hz /camera/depth/image_rect_color
 rostopic hz /camera/rgb/camera_info
+
+roslaunch ciel_bot world.launch world_name:=kitchen_dining.world
+roslaunch ciel_bot mapping.launch
+roslaunch ciel_bot teleop.launch

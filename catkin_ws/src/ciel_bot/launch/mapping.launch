@@ -28,7 +28,7 @@
             <remap from="grid_map" to="/map"/>
 
             <!-- Rate (Hz) at which new nodes are added to map -->
-            <param name="Rtabmap/DetectionRate" type="string" value="1"/>
+            <param name="Rtabmap/DetectionRate" type="string" value="5"/>
 
             <!-- 2D SLAM -->
             <param name="Reg/Force3DoF" type="string" value="true"/>

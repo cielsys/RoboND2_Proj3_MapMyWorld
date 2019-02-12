@@ -10,8 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8180506e-2cf9-4acb-9367-498e3af35f50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/EnvBuildNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EnvBuildNotes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/worlds/simple_rect.world" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/worlds/simple_rect.world" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,9 +59,9 @@
         <counts>
           <entry key="gazebo" value="45" />
           <entry key="gitignore" value="199" />
-          <entry key="launch" value="337" />
+          <entry key="launch" value="338" />
           <entry key="md" value="93" />
-          <entry key="txt" value="174" />
+          <entry key="txt" value="317" />
           <entry key="xacro" value="117" />
           <entry key="xml" value="16" />
         </counts>
@@ -69,8 +70,8 @@
         <counts>
           <entry key="CMakeLists.txt" value="4" />
           <entry key="Markdown" value="93" />
-          <entry key="PLAIN_TEXT" value="369" />
-          <entry key="XML" value="515" />
+          <entry key="PLAIN_TEXT" value="512" />
+          <entry key="XML" value="516" />
         </counts>
       </usages-collector>
     </session>
@@ -112,8 +113,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="8" selection-start-line="3" selection-end-line="8" />
+                <state relative-caret-position="528">
+                  <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
                 </state>
               </provider>
             </entry>
@@ -158,20 +159,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+                <state relative-caret-position="506">
+                  <caret line="23" selection-start-line="23" selection-end-line="23" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/EnvBuildNotes.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="148" selection-start-line="148" selection-end-line="148" />
+                <state relative-caret-position="696">
+                  <caret line="154" selection-start-line="154" selection-end-line="154" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -221,12 +222,12 @@
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/robot_description_ciel.launch" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/urdf/ciel_bot.xacro" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/rtabmap/.gitignore" />
-        <option value="$PROJECT_DIR$/EnvBuildNotes.txt" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/world_main.launch" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/urdf/ciel_bot.gazebo" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/teleop.launch" />
-        <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch" />
+        <option value="$PROJECT_DIR$/EnvBuildNotes.txt" />
+        <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch" />
       </list>
     </option>
   </component>
@@ -524,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EnvBuildNotes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/world_main.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -566,17 +560,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch">
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="3" selection-end-line="8" />
+        <state relative-caret-position="506">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch">
+    <entry file="file://$PROJECT_DIR$/EnvBuildNotes.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="696">
+          <caret line="154" selection-start-line="154" selection-end-line="154" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
         </state>
       </provider>
     </entry>
