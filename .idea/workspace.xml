@@ -11,8 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8180506e-2cf9-4acb-9367-498e3af35f50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Assets/frames.gv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Assets/frames.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +31,7 @@
         <counts>
           <entry key="gazebo" value="6" />
           <entry key="gitignore" value="4" />
-          <entry key="launch" value="16" />
+          <entry key="launch" value="17" />
           <entry key="md" value="1" />
           <entry key="pgm" value="1" />
           <entry key="rtab_run" value="1" />
@@ -51,7 +50,7 @@
           <entry key="Image" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="XML" value="31" />
+          <entry key="XML" value="32" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -59,7 +58,7 @@
         <counts>
           <entry key="gazebo" value="45" />
           <entry key="gitignore" value="199" />
-          <entry key="launch" value="334" />
+          <entry key="launch" value="337" />
           <entry key="md" value="93" />
           <entry key="txt" value="174" />
           <entry key="xacro" value="117" />
@@ -71,13 +70,13 @@
           <entry key="CMakeLists.txt" value="4" />
           <entry key="Markdown" value="93" />
           <entry key="PLAIN_TEXT" value="369" />
-          <entry key="XML" value="512" />
+          <entry key="XML" value="515" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.55165964">
+    <splitter split-orientation="horizontal" split-proportion="0.50023377">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
@@ -104,7 +103,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/world_main.launch">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
+                <state relative-caret-position="330">
                   <caret line="15" column="55" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="55" />
                 </state>
               </provider>
@@ -113,8 +112,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+                <state relative-caret-position="176">
+                  <caret line="8" selection-start-line="3" selection-end-line="8" />
                 </state>
               </provider>
             </entry>
@@ -124,33 +123,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="792">
                   <caret line="36" selection-start-line="36" selection-end-line="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="484">
-                  <caret line="22" selection-start-line="22" selection-end-line="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/amcl.launch">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="44">
-                  <caret line="2" selection-end-line="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/robot_description_ciel.launch">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="88">
-                  <caret line="4" column="106" selection-start-line="4" selection-start-column="106" selection-end-line="4" selection-end-column="106" />
                 </state>
               </provider>
             </entry>
@@ -187,6 +159,15 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="154">
+                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/EnvBuildNotes.txt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="630">
@@ -240,12 +221,12 @@
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/robot_description_ciel.launch" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/urdf/ciel_bot.xacro" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/rtabmap/.gitignore" />
-        <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch" />
         <option value="$PROJECT_DIR$/EnvBuildNotes.txt" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/world_main.launch" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/urdf/ciel_bot.gazebo" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/teleop.launch" />
         <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch" />
+        <option value="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch" />
       </list>
     </option>
   </component>
@@ -290,14 +271,6 @@
               <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ciel_bot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="P3_Root" type="b2602c69:ProjectViewProjectNode" />
-              <item name="P3_Root" type="462c0819:PsiDirectoryNode" />
-              <item name="catkin_ws" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ciel_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="launch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="P3_Root" type="b2602c69:ProjectViewProjectNode" />
@@ -505,13 +478,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/robot_description_ciel.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="106" selection-start-line="4" selection-start-column="106" selection-end-line="4" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catkin_ws/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -539,27 +505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/amcl.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudentProjectMaterials/rtab_run">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/urdf/ciel_bot_rgb.gazebo">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-726" />
@@ -579,20 +524,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/teleop.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/world_main.launch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EnvBuildNotes.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -600,10 +531,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch">
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/world_main.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/amcl.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/robot_description_ciel.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="106" selection-start-line="4" selection-start-column="106" selection-end-line="4" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/teleop.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StudentProjectMaterials/rtab_run">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" selection-start-line="3" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/rtabviz.launch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
