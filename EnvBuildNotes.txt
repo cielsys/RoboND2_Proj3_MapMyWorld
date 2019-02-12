@@ -136,4 +136,13 @@ DEBUGGING
 rosrun tf view_frames
 rosrun tf tf_monitor frame_1 frame_2
 rqt_graph
-ros_wtf
+roswtf
+rqt_console
+rqt_image_view
+rtabmap-databaseViewer ~/.ros/rtabmap.db
+
+
+rostopic hz /rtabmap/odom
+rostopic hz /camera/rgb/image_rect_color
+rostopic hz /camera/depth/image_rect_color
+rostopic hz /camera/rgb/camera_info

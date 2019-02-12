@@ -1,0 +1,4 @@
+# Placeholder to ensure folder is created for rtab db output files.
+# These are big files, ignored by default. Must explicitly add/override
+# the ignore to get it into the repo.
+*.db

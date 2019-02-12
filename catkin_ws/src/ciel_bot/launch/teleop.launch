@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
 
-    <node name="teleop_keyboard" pkg="ciel_bot" type="teleop" output="screen">
-        <remap from="teleop_keyboard/cmd_vel" to="cmd_vel"/>
+    <node name="teleop" pkg="ciel_bot" type="teleop" output="screen">
+        <!-- <remap from="teleop_keyboard/cmd_vel" to="cmd_vel"/> -->
     </node>
 </launch>
