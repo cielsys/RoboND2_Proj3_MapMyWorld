@@ -10,9 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8180506e-2cf9-4acb-9367-498e3af35f50" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/EnvBuildNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/EnvBuildNotes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/worlds/simple_rect.world" beforeDir="false" afterPath="$PROJECT_DIR$/catkin_ws/src/ciel_bot/worlds/simple_rect.world" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.aux" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.log" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report.tex" beforeDir="false" afterPath="$PROJECT_DIR$/report/report.tex" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -171,8 +173,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/EnvBuildNotes.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="696">
-                  <caret line="154" selection-start-line="154" selection-end-line="154" selection-end-column="32" />
+                <state relative-caret-position="344">
+                  <caret line="138" selection-start-line="138" selection-end-line="138" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -567,17 +569,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EnvBuildNotes.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
-          <caret line="154" selection-start-line="154" selection-end-line="154" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catkin_ws/src/ciel_bot/launch/mapping.launch">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EnvBuildNotes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="138" selection-start-line="138" selection-end-line="138" selection-end-column="21" />
         </state>
       </provider>
     </entry>
