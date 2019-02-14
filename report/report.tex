@@ -41,13 +41,10 @@ In this project SLAM is demonstrated in a ROS/Gazebo simulation environment with
 \section{Background / Formulation}
 Because mapping and localization is so important for mobile robotics it is a highly researched field and has many well developed techniques and technologies. The SLAM approach has proven a very effective solution for this problem and has evolved into a family of similar techniques including Fast-SLAM, Graph-Slam and occupancy grid mapping, each with with pros and cons for different applications. 
 
-\subsection{Occupancy Grid}
 Occupancy grid mapping is a technique that uses bayes filtering to determine the presence of obstacles within a 2D grid of the environment.
 
-\subsection{FastSlam}
 FastSlam uses particle filtering. It uses comparisons of kalman filtered random particle poses against only the the current, known sensor data input at each moment.
 
-\subsection{GraphSlam}
 GraphSlam solves the Slam problem by analyzing the entire trajectory of robot poses, all of the previous sensor inputs and the current map. It attempts to correlate the sensor inputs into correlated features that then feedback into correcting the  presumably noisy pose locations. This is the technique used by by RTABMap.
 
 \subsection{RTABMap Slam}
@@ -68,7 +65,6 @@ The RTABMap package uses all of these sensor data streams in a way that is, fran
 \section{Configuration}
 Much of the configuration of this ROS project was carried over from the prior Localization project and was adapted as described below.The ROS graph is shown in Fig ~\ref{fig:rosgraph}.
 
-
 \begin{figure}[h]
       \centering
       \includegraphics[width=\linewidth]{Assets/rosgraph_working.png}
@@ -76,12 +72,12 @@ Much of the configuration of this ROS project was carried over from the prior Lo
       \label{fig:rosgraph}
 \end{figure}
 
-\subsection{RTAbMap Config}
+\subsection{RTABMap Config}
  The configuration for the RTABMap ROS package was supplied and only minor modifications were required to link up the data stream ROS topics correctly. Unfortunately all available time was taken up achieving basic functionality and the default values had to remain as is. However it clear that many parameters of RTABMap should be tuned to optimized the effectiveness of the map generation. Factors such as the nature of the environment, the nature of the robot, for example the height of sensors, the kind of sensors, the update rate of the sensors, the velocity of the robot, the power of the robot cpu all could have a dramatic effect on how the RTABMap performed and presumably many of these factors could optimized for using the RTABMap config parameters
   
 \subsection{Robot Config}
 The robot used in this project, CielBot, is an enhanced version of the very simple robot used in the previous localization project. It is a cylindindrical, 2 wheeled differential drive robot with the 3 sensors mentioned above. The robot in this project replaces the simple RGB camera with a model of the Kinect RGB Depth camera. Configuration required that the ROS nodes/topics from this camera as well as the lidar and wheel odometry were properly subscribed by the RTABMap ros node.
-Additionally the transform tree required a special "camera\_rgbd\_frame" due to, is seems, a bug in the ROS kinect model. The transform tree is shown in Fig ~\ref{fig:tftree}.
+Additionally the transform tree required a special "camera\_rgbd\_frame" due to, it seems, a bug in the ROS kinect model. The transform tree is shown in Fig ~\ref{fig:tftree}.
 
 \begin{figure}[h]
       \centering
@@ -92,7 +88,7 @@ Additionally the transform tree required a special "camera\_rgbd\_frame" due to,
 
 
 \subsection{Custom World Config}
-The custom world was created with Gazebo. Using Gazebo for world editing was unintuitive and for this reason a very simple world was designed. It is a rectangular building of 4 grey walls with a variety of predefined object models placed at random around the room as seen in Fig ~\ref{fig:customworld}.
+The custom world was created with Gazebo. Using Gazebo for world editing was unintuitive and for this reason a very simple world was designed. It is a L shaped building of variously colored walls with a variety of predefined object models placed at random around the room as seen in Fig ~\ref{fig:customworld}.
 
 \begin{figure}[h]
       \centering
@@ -145,12 +141,12 @@ From Fig ~\ref{fig:customworld_Map_3D} it can be seen that RTABMap was able to e
 
 
 \section{Discussion}
-The maps generated in all cases had flaws. However these were an improvement over prior runs where the robot made fewer traversals. It is almost certain that more traversals would generate improved results. However, there was a time shortage that prevented further efforts on improving the maps. For example, as mentioned in the Config Section, there are numerous RTABMap parameters that could bee optimized.
+The maps generated in all cases had flaws. However these were an improvement over prior runs where the robot made fewer traversals. It is almost certain that yet more traversals would generate improved results. However, there was a time shortage that prevented further efforts on improving the mapping results. For example, as mentioned in the Config Section, there are numerous RTABMap parameters that could be optimized.
 
 In some earlier expermental simple worlds it was observed that simple, uniform or symmetric worlds present more difficulty to SLAM than richer, more complex environments. By adding more objects to the custom world, and more features such as color and texture, mapping results could be improved. However there is likely a 'sweet spot' of feature richness beyond which the complexity af comparing features, especially in a large environment, would become computational very difficult and require heavy computational resources.
 
 \section{Conclusion / Future work}
-The project was modestly successful in terms of simple goal of implementing a robot that uses RTABMap in ROS/Gazebo to perform SLAM mapping and localization in a simple simulated enviroenment. It was also modestly successful in terms of the wider goal of gaining experience and increased understanding of SLAM and it's subleties and the ROS/Gazebo environment as a robot design and test platform. Unfortunately the mechanincs of getting ROS and various dependencies configured and the difficulty in finding help for simple errors meant that no time was left for actually exploring the behaviour of the SLAM solution or exploring further reading about various SLAM techniques. Those would be noble useful pursuits in the future.
+The project was modestly successful in terms of simple simple goal of implementing a robot that uses RTABMap in ROS/Gazebo to perform SLAM mapping and localization in a simple simulated enviroenment. It was also modestly successful in terms of the wider goal of gaining experience and increased understanding of SLAM and it's subleties and the ROS/Gazebo environment as a robot design and test platform. Unfortunately the mechanincs of getting ROS and various dependencies configured and the difficulty in finding help for simple errors meant that no time was left for actually exploring the behaviour of the SLAM solution or exploring further reading about various SLAM techniques. Those would be useful pursuits in the future.
 
 In particular parameters tuning could optimize for accurate, precise localization and mapping, or for improved processing time to permit running on less powerful robots. 
 

@@ -127,10 +127,10 @@ find /usr/include/ -print |grep -i qvtk
 /usr/include/vtk-6.2/QVTKGraphicsItem.h
 
 
-export ROS_IP=192.168.1.153
 
-curl -L https://s3-us-west-1.amazonaws.com/udacity-robotics/Term+2+Resources/P3+Resources/models.tar.gz | tar zx -C ~/.gazebo/
+
 wget https://s3-us-west-1.amazonaws.com/udacity-robotics/Term+2+Resources/P3+Resources/Student+Project+Materials.zip
+curl -L https://s3-us-west-1.amazonaws.com/udacity-robotics/Term+2+Resources/P3+Resources/models.tar.gz | tar zx -C ~/.gazebo/
 
 roslaunch ciel_bot world_main.launch world_name:=simple_rect.world
 roslaunch ciel_bot teleop.launch

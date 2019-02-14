@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.21)  12 FEB 2019 21:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.1.21)  13 FEB 2019 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -255,33 +255,37 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/sc' in size <11.04124> not available
 
 (Font)              Font shape `OT1/phv/b/sc' tried instead on input line 34.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <9.53561> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 44.
-LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 57.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 50.
+LaTeX Font Info:    Calculating math sizes for size <9.53561> on input line 54.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9.53561> on input line 57.
+(Font)              <9.53561> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6.6749> on input line 57.
+(Font)              <6.6749> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.7678> on input line 57.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              <4.7678> on input line 54.
 
-
-]
-<Assets/rosgraph_working.png, id=11, 1468.42407pt x 955.49893pt>
+<Assets/rosgraph_working.png, id=1, 1468.42407pt x 955.49893pt>
 File: Assets/rosgraph_working.png Graphic file (type png)
 
 <use Assets/rosgraph_working.png>
-Package pdftex.def Info: Assets/rosgraph_working.png used on input line 74.
+Package pdftex.def Info: Assets/rosgraph_working.png used on input line 70.
 (pdftex.def)             Requested size: 252.94499pt x 164.59047pt.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
 <Assets/Frames1_ScreenShot_2019-02-12_16-25-23.png, id=13, 1924.18875pt x 1419.
 3025pt>
 File: Assets/Frames1_ScreenShot_2019-02-12_16-25-23.png Graphic file (type png)
 
  <use Assets/Frames1_ScreenShot_2019-02-12_16-25-23.png>
 Package pdftex.def Info: Assets/Frames1_ScreenShot_2019-02-12_16-25-23.png used
- on input line 88.
+ on input line 84.
 (pdftex.def)             Requested size: 252.94499pt x 186.5732pt.
 
 
@@ -291,7 +295,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Assets/custom_gazebo_world.jpg Graphic file (type jpg)
 
 <use Assets/custom_gazebo_world.jpg>
-Package pdftex.def Info: Assets/custom_gazebo_world.jpg used on input line 99.
+Package pdftex.def Info: Assets/custom_gazebo_world.jpg used on input line 95.
 (pdftex.def)             Requested size: 252.94499pt x 196.46547pt.
 
 
@@ -303,7 +307,7 @@ pt>
 File: Assets/DBViewer_kitchen_2019-02-11_19-04-25.png Graphic file (type png)
  <use Assets/DBViewer_kitchen_2019-02-11_19-04-25.png>
 Package pdftex.def Info: Assets/DBViewer_kitchen_2019-02-11_19-04-25.png used o
-n input line 112.
+n input line 108.
 (pdftex.def)             Requested size: 252.94499pt x 162.24208pt.
 
 
@@ -316,54 +320,55 @@ File: Assets/rtabviz_kitchen46LC_2019-02-11_19-04-25.png Graphic file (type png
 )
  <use Assets/rtabviz_kitchen46LC_2019-02-11_19-04-25.png>
 Package pdftex.def Info: Assets/rtabviz_kitchen46LC_2019-02-11_19-04-25.png use
-d on input line 121.
+d on input line 117.
 (pdftex.def)             Requested size: 252.94499pt x 143.27203pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./Assets/rosgraph_working.png> <./Assets/Frames1_ScreenShot_2019-02-12_16-2
-5-23.png> <./Assets/custom_gazebo_world.jpg>]
-<Assets/RTabViewMap_Custom.png, id=22, 1602.98875pt x 1019.81pt>
+<Assets/RTabViewMap_Custom.png, id=17, 1602.98875pt x 1019.81pt>
 File: Assets/RTabViewMap_Custom.png Graphic file (type png)
 
 <use Assets/RTabViewMap_Custom.png>
-Package pdftex.def Info: Assets/RTabViewMap_Custom.png used on input line 133.
+Package pdftex.def Info: Assets/RTabViewMap_Custom.png used on input line 129.
 (pdftex.def)             Requested size: 252.94499pt x 160.91658pt.
 
-<Assets/rviz_custom_map.png, id=23, 1571.8725pt x 1434.35875pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Assets/rviz_custom_map.png, id=18, 1571.8725pt x 1434.35875pt>
 File: Assets/rviz_custom_map.png Graphic file (type png)
 
 <use Assets/rviz_custom_map.png>
-Package pdftex.def Info: Assets/rviz_custom_map.png used on input line 140.
+Package pdftex.def Info: Assets/rviz_custom_map.png used on input line 136.
 (pdftex.def)             Requested size: 252.94499pt x 230.81528pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3 <./Assets/DBViewer_kitchen_2019-02-11_19-04-25.png> <./Assets/rtabviz_kitche
-n46LC_2019-02-11_19-04-25.png> <./Assets/RTabViewMap_Custom.png> <./Assets/rviz
-_custom_map.png>] [4
-
-] (./report.aux) ) 
+[2 <./Assets/rosgraph_working.png> <./Assets/Frames1_ScreenShot_2019-02-12_16-2
+5-23.png> <./Assets/custom_gazebo_world.jpg>] [3 <./Assets/DBViewer_kitchen_201
+9-02-11_19-04-25.png> <./Assets/rtabviz_kitchen46LC_2019-02-11_19-04-25.png> <.
+/Assets/RTabViewMap_Custom.png> <./Assets/rviz_custom_map.png>] (./report.aux) 
+) 
 Here is how much of TeX's memory you used:
  2522 strings out of 494953
  41943 string characters out of 6180977
- 99804 words of memory out of 5000000
+ 100804 words of memory out of 5000000
  5781 multiletter control sequences out of 15000+600000
  41675 words of font info for 89 fonts, out of 8000000 for 9000
  17 hyphenation exceptions out of 8191
  38i,5n,23p,946b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/zapfding/uzdr.pfb>
-Output written on report.pdf (4 pages, 2082906 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
+atino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.p
+fb>
+Output written on report.pdf (3 pages, 2113321 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 49 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
